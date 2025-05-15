@@ -1,0 +1,627 @@
+h1, h2, h3, h4, h5{
+    font-family: "Sansita Swashed", system-ui;
+    color: #fff;
+    font-weight: 300;
+}
+h1{
+    font-size: 65px;
+}
+h2{
+    font-size: 48px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.block1__container, .discount__container, .about-us__container, .footer__container, .container{
+    width: 1120px;
+    height: 100%;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+span, a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+span:hover, a:hover{
+    cursor: pointer;
+    color: #E9BD8c;
+}
+header{
+    height: 90px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.logo{
+    height: 120px;
+    width: 110px;
+    position: absolute;
+    top: -16px;
+    left: 50px;
+}
+.logo a{
+    height: 120px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.button{
+    background-color: #944c24;
+    padding: 15px 35px ;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: #6e3b1f;
+}
+.menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu__link {
+    margin-right: 30px;
+}
+.menu__link:last-child{
+    margin: 0;
+}
+.menu__link_active{
+    color: #E9BD8c;
+}
+.login {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.block1{
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/top-view-delicious-cinnamon-rolls-concept.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.block1__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block1__text{
+    width: 600px;
+    margin-bottom: 85px;
+}
+.block1__text p{
+    color: #E9BD8c;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.block1__button{
+    margin-right: 25px;
+}
+
+
+.discount {
+    height: 500px;
+    background-image: url(../img/Download.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.discount__container {
+    text-align: center;
+    padding: 70px 0;
+}
+.discount__text {
+    margin: auto;
+    width: 500px;
+}
+.discount__text h2{
+    color: #933C24;
+    font-weight: 500;
+}
+.discount__text p{
+    margin:37px auto;
+    font-size: 24px;
+    color: #5d5d5d;
+    font-weight: 400;
+    width: 330px;
+}
+
+
+.about-us {
+    height: 500px;
+    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/pic_29174.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us__container {
+    text-align: center;
+    padding: 70px 0;
+}
+.about-us__text {
+    margin: auto;
+    width: 500px;
+    
+}
+.about-us__text h2{
+    color: #fff;
+    font-weight: 500;
+}
+.about-us__text p{
+    margin: 45px auto;
+    font-size: 24px;
+    color: #b9b9b9;
+    font-weight: 400;
+    width: 350px;
+}
+
+footer{
+    height: 400px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../img/black-concrete-wall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+hr{
+    height: 2px;    
+    background-color: rgba(233, 189, 141, 20%);
+    margin-bottom: 40px ;
+}
+.footer__container h3{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #E9BD8D;
+    margin-bottom: 20px;
+}
+.footer__container p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+.bottom__about-us, .bottom__odkryj, .bottom__najnowsze-wiadomosci {
+    width: 33%;
+}
+.top img{
+    display: inline-block;
+    width: 120px;
+    border-radius: 200px;
+
+}
+.login-form, .registration-form{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../img/black-concrete-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    z-index: 99;
+    border: 3px solid #5d5d5d;
+}
+.login-form {
+    min-height: 320px;
+}
+form{
+    margin-top: 30px;
+    text-align: center;
+}
+input{
+    margin-top: 10px;
+    width: 250px;
+    height:40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    width: 290px;
+    height: 40px;
+    background-color: #944c24;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    margin:10px 0;
+}
+button:hover{
+    cursor:pointer;
+    background-color: #6e3b1f;
+    transition: 0.3s ease;
+    color: #E9BD8c;
+}
+
+.login-form p, .registration-form p{
+    margin-top: 20px;
+}
+.login-form__registration, .registration-form__login{
+    text-decoration: underline; 
+}
+.login-form__password-reset{
+    text-align: left;
+    display: block;
+    padding-left: 15px;
+    font-size: 13px;
+}
+.login-form__password-reset:hover{
+    text-decoration: underline;
+}
+.login-form.visible, .registration-form.visible{
+    opacity: 100;
+    visibility: visible;
+}
+.cross{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.cross:hover{
+    cursor: pointer;
+}
+.cross span{
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+.cross:hover span{
+    background-color: #E9BD8D;
+}
+.cross span:first-child{
+    transform: rotate(45deg);
+    top: 14px;
+}
+.cross span:last-child{
+    transform: rotate(-45deg);
+    bottom: 13px;
+}
+
+.registration-form {
+    height:570px;
+    
+}
+
+.registration-form button{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.zamow{
+    background-image: url(../img/black-concrete-wall.jpg);
+}
+
+.container{
+    margin-top: 80px;
+}
+.container h2{
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 70px 0px;
+    width: 100%;
+}
+.best-products__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/black-concrete-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0 10px 20px;
+    position: relative;
+}
+
+.product .button{
+    display: inline-block;
+    padding: 10px 12px;
+    width: 81px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.first-layer {
+    text-align: center;
+}
+.third-layer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price {
+    font-size: 24px;
+    font-weight: 400;
+}
+.product img{
+    width: auto;
+    height: 200px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    width: 180px;
+    min-height: 65px;
+}
+.discover-more__list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #5d5d5d;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.discover-more__list div{
+    margin-right: 40px;
+    user-select: none;
+}
+.discover-more__list div:hover{
+    cursor:pointer;
+}
+.discover-more__list div:last-child{
+    margin: 0;
+}
+.discover-more hr{
+    background-color: #5d5d5d;
+    opacity: 0.1;
+    height: 2px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.discover-more__products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    left: 1000%;
+}
+.active{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #6e3b1f;
+    text-decoration-thickness: 5px;
+}
+
+.discover-more__products{
+    position: relative;
+    min-height: 900px;
+    overflow: hidden;
+}
+.product-active{
+    left: 1px;
+}
+.user-menu {
+    background-color: #202020;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    border: 3px solid #E9BD8c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 22px;
+    top: -100%;
+    z-index: 1;
+    transition: 0.3s ease;
+
+}
+
+.user-menu.active{
+    right: 22px;
+    top: 70px;
+}
+
+.panel-klienta h1{
+    color: #ffffff;
+}
+.panel-klienta.container{
+    width: 700px;
+}
+.panel-klienta{
+    background-image: url(../img/black-concrete-wall.jpg);
+    text-align: center;
+    font-weight: 900;
+    border: 3px solid #caa679;
+    border-radius: 20px;
+    margin: 140px auto;
+    height: 500px;
+    color: #fff;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 50px 120px;
+}
+.panel-klienta input{
+    margin: 20px 0;
+}
+
+.information {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 35px;
+}
+.information span{
+    margin-top: 20px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.style-none:hover{
+    color: #fff;
+    cursor:default;
+}
+.form, .change-pswd{
+    padding: 20px;
+    background-image: url(../img/black-concrete-wall.jpg);
+    border: 3px solid #E9BD8c;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.form h3, .change-pswd h3{
+    color: #fff;
+    font-size: 40px;
+}
+.change-pswd{
+    width: 500px;
+}
+.form{
+    width: 400px;
+}
+.form.visible, .change-pswd.visible{
+    visibility:visible;
+    opacity: 100;
+    z-index: 3;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+.dark-background.visible{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 1000%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    transition: 0.6s ease;
+}
+
+.zamowienia {
+    margin: 200px 0 ;
+    border: 3px solid #caa679;
+    border-radius: 30px;
+    min-height: 600px;
+    position: relative;
+    padding: 40px;
+    
+}
+
+.zamowienia__content{
+    display: flex;
+}
+.zamowienia h1{
+    color: #000;
+    text-align: center;
+}
+.zamowienia__button {
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.zamowienia__buttons{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+}
+
+.zamowienia__produkty {
+    width: 660px;
+    margin: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zamowienia__produkty .name {
+    width: 100%;
+}
+.zamowienia__produkty .quantity{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.zamowienia__produkty .product{
+    width: 200px;
+    padding: 20px;
+    justify-content: center;
+    height: 320px;
+}
+.zamowienia__produkty .price{
+    text-align: center;
+}
+.zamowienia__produkty .product img{
+    width: 140px;
+    height: auto;
+}
+.zamowienie{
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #473a2c;
+    margin-bottom: 10px;
+}
